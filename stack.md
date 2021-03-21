@@ -28,4 +28,13 @@ Should be written in golang using fiber, which should be verifying hashes, unzip
 ### Recommendation service
 This should be able to be written in any language/framework as performance shouldn't be a huge issue
 
+### Backend
+This should be a catch-all backend which will handle most things like reports, notifications etc  
+Should be able to be written in any language
 
+### Web-Frontend
+Frontend for the desktop, preferably written in react and served via go-fiber.  
+A PWA would be nice but not needed.
+
+### Mobile-Frontend
+Frontend written in react native or java.
