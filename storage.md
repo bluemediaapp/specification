@@ -14,12 +14,38 @@ Videos should be indexed in the database in the following schema
   "creator": "c7ea5d40-a8f5-47e9-90ce-abec19d1a1ac",
   "like-count": 0,
   "liked-by": [
-    "ddcd4f6b-eb19-47e4-ae1b-863353ba6466"
+    "024e78c5-27a0-4d0f-95c7-4b7a3d952067"
   ],
   "storage-stage": 0,
-  "storage-id": null
+  "storage-id": "024e78c5-27a0-4d0f-95c7-4b7a3d952067"
 }
 ```
+## Id
+The id should be a UUID
+
+## Creator
+Creator should be a foreign key to link to the creator.
+
+## Like count
+Like count should essentially just be the size of liked-by, just to optimise speed
+
+## Liked-by
+Liked by should be a many-to-one relation with the creator id as the foreign key
+
+## Storage-stage
+Storage stage should be an int detailing which stage its stored in
+0. LIVE
+1. RELIVE
+2. ARCHIVE
+3. EXPIRING
+4. AWAITING_PUSH
+
+## Storage id
+Storage id should be a way for the system to identify where the video is saved.  
+For stage 0 & 1 this should just be the video id  
+For stage 2 this should be the archive id  
+For stage 3 this should be the sia-sky uri
+For stage 4 this should just be null.
 
 # Storage levels
 Storage will be performed in different levels
