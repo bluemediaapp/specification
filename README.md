@@ -1,3 +1,4 @@
 # Blue app
 
-[Storage](storage.md)
+[Storage](storage.md)  
+[Stack](stack.md)
