@@ -142,7 +142,7 @@ The target is to keep the total size of collections under 50 gigs.
 
 ### What this state does
 
-The collection will be uploaded to sia.tech using [Sia Skynet](https://skynet.net)  
+The collection will be uploaded to sia.tech using [Sia Skynet](https://siasky.net)  
 The data will be deleted after 30d so after 15d the archive will be sent to all creators which have a video in the
 collection. If they log on when the videos are in the AWAITING_PUSH state, it will be republished to Skynet by the user
 then updated on the database index.
