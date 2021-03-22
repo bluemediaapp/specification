@@ -92,7 +92,6 @@ Storage will be performed in different levels
 
 - LIVE
 - RELIVE
-- DISK
 - ARCHIVE
 - EXPIRING
 - AWAITING_PUSH
