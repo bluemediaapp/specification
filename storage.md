@@ -52,19 +52,19 @@ Liked by should be a many-to-one relation with the creator id as the foreign key
 
 Storage stage should be an int detailing which stage its stored in
 
-0. LIVE
-1. RELIVE
-2. ARCHIVE
-3. EXPIRING
-4. AWAITING_PUSH
+1. LIVE
+2. RELIVE
+3. ARCHIVE
+4. EXPIRING
+5. AWAITING_PUSH
 
 ## Storage-id
 
 Storage id should be a way for the system to identify where the video is saved.  
-For stage 0 & 1 this should just be the video id  
-For stage 2 this should be the archive id  
-For stage 3 this should be the sia-sky uri  
-For stage 4 this should just be null.
+For stage 1 & 2 this should just be the video id  
+For stage 3 this should be the archive id  
+For stage 4 this should be the sia-sky uri  
+For stage 5 this should just be the archive id.
 
 ## Moderation-flags
 
