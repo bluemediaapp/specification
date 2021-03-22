@@ -80,7 +80,8 @@ Storage will be performed in different levels
 
 ### What this state does
 
-This state will store the information in cache Data in this state should have an expiry time of 10 minutes
+This state will store the information in the cache  
+Data in this state should have an expiry time of 10 minutes
 
 ## RELIVE
 
