@@ -107,7 +107,8 @@ Storage will be performed in different levels
 ### What this state does
 
 This state will store the information in the cache  
-Data in this state should have an expiry time of 10 minutes
+Data in this state should have an expiry time of 10 minutes  
+Please note that all videos in this state is also in the RELIVE state.
 
 ## RELIVE
 
@@ -119,3 +120,41 @@ Data in this state should have an expiry time of 10 minutes
 ### What this state does
 
 The video should be stored in a folder with the video id as the file name.
+
+## ARCHIVE
+
+### Criteria
+
+- Not usually watched
+- Videos on their way out of the golden period
+
+### What this state does
+
+The video will be collected into collections of gzipped files and stored on our servers.  
+The target is to keep the total size of collections under 50 gigs.
+
+## EXPIRING
+
+### Criteria
+
+- Basically never watched videos
+- We are out of space in the archive
+
+### What this state does
+
+The collection will be uploaded to sia.tech using [Sia Skynet](https://skynet.net)  
+The data will be deleted after 30d so after 15d the archive will be sent to all creators which have a video in the
+collection. If they log on when the videos are in the AWAITING_PUSH state, it will be republished to Skynet by the user
+then updated on the database index.
+
+## AWAITING_PUSH
+
+### Criteria
+
+- The 30d EXPIRING time has expired.
+
+### What this state does
+
+Any videos in this state will be unavailable.  
+When any client logs on it will check if any videos it has stored is in this state, it will upload it to Skynet and send
+back the url
