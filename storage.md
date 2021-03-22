@@ -73,8 +73,9 @@ Flags:
 
 1. Early warning penalty
 2. Guidelines violation
-3. NSFW content penalty
-4. Early creator boost
+3. Unsure community violation
+4. NSFW content penalty
+5. Early creator boost
 
 ## Flags
 

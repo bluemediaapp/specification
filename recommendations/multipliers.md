@@ -39,6 +39,7 @@ This penalty will not be stacked.
 ## Guidelines violation penalty
 
 If the video has been voted out by the community, the video will be forced to private.  
+If the community are unsure, the video will be given a -0.7 penalty and be sent to the supreme community moderators  
 A community notice will be applied to the creator profile, and a high priority notification will be sent
 
 ## NSFW content penalty
@@ -46,7 +47,7 @@ A community notice will be applied to the creator profile, and a high priority n
 As much as I want all content to be accepted on my platform, I still want my platform to not become a NSFW sharing
 site.  
 NSFW content will not be sent to people with the "Show NSFW content" content preference turned off. A small penalty of
--0.3 will be applied to reduce the amount of NSFW content
+-0.2 will be applied to reduce the amount of NSFW content
 
 ## Early creator boost
 
